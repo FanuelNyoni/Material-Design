@@ -4,7 +4,7 @@ import { Button, Typography } from "@material-ui/core";
 function App() {
   return (
     <div className="App">
-      <Typography color="primary">
+      <Typography color="primary" variant="h6">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut
         illo reprehenderit magnam nam debitis nisi culpa, assumenda
         necessitatibus dicta similique dolorem officiis harum omnis aliquid.
