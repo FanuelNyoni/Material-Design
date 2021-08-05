@@ -1,8 +1,9 @@
-import "./style.css";
 import { Button, Typography } from "@material-ui/core";
-import {TouchApp} from "@material-ui/icons"
+import { TouchApp } from "@material-ui/icons";
+import useStyles from "./styles.js";
 
 function App() {
+  const classes = useStyles();
   return (
     <div className="App">
       <Typography color="primary" variant="h6">
@@ -11,7 +12,11 @@ function App() {
         necessitatibus dicta similique dolorem officiis harum omnis aliquid.
         Similique a accusamus sint.
       </Typography>
-      <Button  color="primary" variant="contained" fullWidth startIcon={<TouchApp />}>
+      <Button
+        variant="contained"
+        startIcon={<TouchApp />}
+        style={classes.button}
+      >
         Press Me
       </Button>
     </div>
