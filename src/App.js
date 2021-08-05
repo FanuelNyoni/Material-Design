@@ -15,7 +15,7 @@ function App() {
       <Button
         variant="contained"
         startIcon={<TouchApp />}
-        style={classes.button}
+        styles={classes.button}
       >
         Press Me
       </Button>
