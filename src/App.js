@@ -1,5 +1,6 @@
 import "./style.css";
 import { Button, Typography } from "@material-ui/core";
+import {TouchApp} from "@material-ui/icons"
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         necessitatibus dicta similique dolorem officiis harum omnis aliquid.
         Similique a accusamus sint.
       </Typography>
-      <Button className="btn" color="secondary" variant="contained" fullWidth>
+      <Button  color="primary" variant="contained" fullWidth startIcon={<TouchApp />}>
         Press Me
       </Button>
     </div>

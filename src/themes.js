@@ -10,8 +10,6 @@ import { cyan, yellow } from '@material-ui/core/colors';
  
  const theme = createTheme({
    palette: {
-     primary: cyan,
-     secondary: green,
    },
    status: {
      danger: 'orange',
