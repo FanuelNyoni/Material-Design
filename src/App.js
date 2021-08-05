@@ -1,6 +1,6 @@
 import { Button, Typography } from "@material-ui/core";
 import { TouchApp } from "@material-ui/icons";
-import useStyles from "./styles.js";
+import  useStyles from "./styles.js";
 
 function App() {
   const classes = useStyles();
