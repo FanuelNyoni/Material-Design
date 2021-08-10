@@ -1,10 +1,15 @@
-import React from 'react'
+import { Container } from "@material-ui/core";
+import useStyles from "./styles";
+
 
 const Feed = () => {
+    const classes = useStyles();
     return (
+        <Container className={classes.container}>
         <div>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, non vel! Nulla cumque similique pariatur minima, placeat, in sequi dolorem illum maxime a temporibus ad repellendus! Quos porro fuga recusandae quod odio dolorum fugiat accusantium vitae repellendus minima, accusamus sequi et consequatur autem tenetur harum ea hic optio! Hic sed itaque adipisci nam molestiae omnis aut consequuntur odio voluptatum unde, architecto officia doloremque modi alias possimus ratione eum quo deleniti quasi accusamus doloribus! Quasi fugit hic error accusantium nulla iste voluptatibus ea quaerat dicta nostrum saepe repellendus quis reiciendis necessitatibus omnis quos, sit dolores ex aut animi distinctio optio est?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequatur praesentium voluptatum placeat voluptas nobis accusantium? Fugiat tempora non quod doloribus natus sit adipisci nemo consectetur dolores rem asperiores, eveniet, cumque veniam necessitatibus illo pariatur incidunt culpa. Itaque voluptates exercitationem et doloribus maxime delectus accusantium totam magni, distinctio omnis dolorem laudantium obcaecati molestiae, alias ea nobis architecto eligendi optio ipsam veritatis amet praesentium, sit nihil? Fugit at porro, ab inventore saepe labore corrupti, obcaecati perferendis quam assumenda quibusdam magni ad enim harum. Error accusantium ullam dignissimos deleniti atque quia numquam saepe dolores! Assumenda consectetur excepturi voluptatem dolor aliquam error quidem!
         </div>
+        </Container>
     )
 }
 

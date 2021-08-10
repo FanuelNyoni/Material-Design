@@ -7,7 +7,7 @@ const Leftbar = () => {
     const classes = useStyles();
 
     return (
-        <Container>
+        <Container className={classes.container}>
             <div className={classes.item}>
                 <Home className={classes.icon}></Home>
                 <Typography className={classes.text}>Home</Typography>
