@@ -6,7 +6,14 @@ const useStyles = makeStyles((theme) => ({
         width: "100%",
         paddingTop: theme.spacing(9),
         backgroundColor: "#00a9bf",
-        color: "white"
+
+        color: "white",
+        [theme.breakpoints.up('sm')]: {
+            backgroundColor: "#788587",
+            color: 'white',
+            border: "2px solid #ece7e7"
+
+        }
     },
 
     item: {
@@ -18,12 +25,23 @@ const useStyles = makeStyles((theme) => ({
             cursor: "Pointer"
         }
     },
+
+    icon: {
+        marginRight: theme.spacing(2),
+        [theme.breakpoints.up('sm')]: {
+            fontsize: "20px"
+        }
+    },
+
     text: {
+        fontWeight: 500,
         [theme.breakpoints.down('sm')]: {
             marginBottom: theme.spacing(3),
             display: "none"
         }
-    }
+    },
+
+
 }));
 
 export default useStyles;
