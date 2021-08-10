@@ -3,10 +3,10 @@ import { makeStyles } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
     container: {
         height: "100vh",
-        width: "100%",
         paddingTop: theme.spacing(9),
         backgroundColor: "#00a9bf",
-
+position: "sticky",
+        top: 0,
         color: "white",
         [theme.breakpoints.up('sm')]: {
             backgroundColor: "#788587",
@@ -34,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
     },
 
     text: {
-        fontWeight: 500,
+        fontWeight: "500",
         [theme.breakpoints.down('sm')]: {
             marginBottom: theme.spacing(3),
             display: "none"
