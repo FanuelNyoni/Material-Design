@@ -1,9 +1,17 @@
 import React from 'react'
-import { Appbar } from "@material-ui/core";
+import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import useStyles from '../styles';
 
 const Navbar = () => {
+    const classes = useStyles();
     return (
-        <AppBar></AppBar>
+        <AppBar>
+            <Toolbar>
+                <Typography variant="h6">
+                    WebSpot dev
+                </Typography>
+            </Toolbar>
+        </AppBar>
     );
 };
 
