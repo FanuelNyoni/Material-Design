@@ -13,6 +13,9 @@ const Navbar = () => {
                 <Typography variant="h6" className={classes.logoSm}>
                     webSpot
                 </Typography>
+                <div className={classes.search}>
+                    <Search /> 
+                </div>
             </Toolbar>
         </AppBar>
     );
