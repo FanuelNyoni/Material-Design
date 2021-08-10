@@ -3,6 +3,7 @@ import { alpha, makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
     appbar: {
         backgroundColor: "#1b232e",
+        position: "absolute"
     },
 
     /*
