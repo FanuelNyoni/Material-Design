@@ -1,13 +1,45 @@
 import useStyles from "./styles"
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
 
 const Post = () => {
 const classes = useStyles();
     
 return (
-    <div>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum consequatur praesentium voluptatum placeat voluptas nobis accusantium? Fugiat tempora non quod doloribus natus sit adipisci nemo consectetur dolores rem asperiores, eveniet, cumque veniam necessitatibus illo pariatur incidunt culpa. Itaque voluptates exercitationem et doloribus maxime delectus accusantium totam magni, distinctio omnis dolorem laudantium obcaecati molestiae, alias ea nobis architecto eligendi optio ipsam veritatis amet praesentium, sit nihil? Fugit at porro, ab inventore saepe labore corrupti, obcaecati perferendis quam assumenda quibusdam magni ad enim harum. Error accusantium ullam dignissimos deleniti atque quia numquam saepe dolores! Assumenda consectetur excepturi voluptatem dolor aliquam error quidem!
-</div>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          component="img"
+          alt="Contemplative Reptile"
+          height="140"
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="My Post"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
     )
 }
 

@@ -5,13 +5,13 @@ const useStyles = makeStyles((theme) => ({
         height: "100vh",
         paddingTop: theme.spacing(9),
         backgroundColor: "#00a9bf",
-position: "sticky",
         top: 0,
         color: "white",
+        marginLeft: 0,
         [theme.breakpoints.up('sm')]: {
             backgroundColor: "#788587",
             color: 'white',
-            border: "2px solid #ece7e7"
+            border: "1px solid #ece7e7"
 
         }
     },
