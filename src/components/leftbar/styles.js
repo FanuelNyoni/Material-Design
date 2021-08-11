@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: "#00a9bf",
         top: 0,
         color: "white",
-        marginLeft: 0,
+        marginLeft: "0px",
         [theme.breakpoints.up('sm')]: {
             backgroundColor: "#788587",
             color: 'white',
