@@ -14,11 +14,11 @@ const classes = useStyles();
 return (
     <Card className={classes.card}>
       <CardActionArea>
-        <CardMedia
+        <CardMedia 
+        className={classes.media}
           component="img"
-          alt="Contemplative Reptile"
-          height="140"
-          image="C:\Users\fancy\Desktop\JavaScript\Dodzi\Material-UI\ui-design\src\components\feed\posts\iguana-2039719_1920.jpg"
+          alt="Reptile"
+          image="https://images.pexels.com/photos/1695717/pexels-photo-1695717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           title="My Post"
         />
         <CardContent>
