@@ -1,8 +1,25 @@
-import { Container, Fab, Modal, TextField, Tooltip } from "@material-ui/core";
+import {
+    Button,
+  Container,
+  Fab,
+  FormControlLabel,
+  FormLabel,
+  MenuItem,
+  Modal,
+  Radio,
+  RadioGroup,
+  Snackbar,
+  TextField,
+  Tooltip,
+} from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
 
 import useStyles from "./styles";
+
+const Alert = (props) => {
+    return <MuiAlert></MuiAlert>
+}
 
 const Add = () => {
   const classes = useStyles();
@@ -31,8 +48,8 @@ const Add = () => {
         aria-describedby="simple-modal-description"
       >
         <Container className={classes.container}>
-        <form className={classes.form} autoComplete="off">
-        <div className={classes.item}>
+          <form className={classes.form} autoComplete="off">
+            <div className={classes.item}>
               <TextField
                 id="standard-basic"
                 label="Title"
@@ -56,7 +73,6 @@ const Add = () => {
               <TextField select label="Visibility" value="Public">
                 <MenuItem value="Public">Public</MenuItem>
                 <MenuItem value="Private">Private</MenuItem>
-                <MenuItem value="Unlisted">Unlisted</MenuItem>
               </TextField>
             </div>
             <div className={classes.item}>
@@ -85,9 +101,36 @@ const Add = () => {
                 />
               </RadioGroup>
             </div>
-        </form>
+            <div className={classes.item}>
+              <Button
+                variant="outlined"
+                color="primary"
+                style={{ marginRight: 20 }}
+                onClick={() => setOpenAlert(true)}
+              >
+                Create
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={() => setOpen(false)}
+              >
+                Cancel
+              </Button>
+            </div>
+          </form>
         </Container>
       </Modal>
+      <Snackbar
+        open={openAlert}
+        autoHideDuration={4000}
+        onClose={handleClose}
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+      >
+        <Alert onClose={handleClose} severity="success">
+          This is a success message!
+        </Alert>
+      </Snackbar>
     </>
   );
 };
