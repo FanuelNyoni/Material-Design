@@ -18,7 +18,7 @@ return (
           component="img"
           alt="Contemplative Reptile"
           height="140"
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image="C:\Users\fancy\Desktop\JavaScript\Dodzi\Material-UI\ui-design\src\components\feed\posts\iguana-2039719_1920.jpg"
           title="My Post"
         />
         <CardContent>
