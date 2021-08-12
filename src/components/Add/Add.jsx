@@ -14,11 +14,12 @@ import {
 } from "@material-ui/core";
 import { Add as AddIcon } from "@material-ui/icons";
 import { useState } from "react";
+import MuiAlert from "@material-ui/lab/Alert";
 
 import useStyles from "./styles";
 
 const Alert = (props) => {
-    return <MuiAlert></MuiAlert>
+    return <MuiAlert elevation={6} variant="filled" {...props}></MuiAlert>
 }
 
 const Add = () => {
