@@ -1,16 +1,13 @@
 import { makeStyles } from "@material-ui/core";
 
 
-const styles = makeStyles((themes) => ({
+const styles = makeStyles((theme) => ({
     card: {
-        marginBottom: themes.spacing(2),
-        [theme.breakpoints.down('sm')]: {
-            height: "50px"
-        }
+        marginBottom: theme.spacing(3),
     },
 
     media: {
-        height: "200px"
+        height: "150px"
     }
 }));
 
