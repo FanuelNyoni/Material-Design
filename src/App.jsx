@@ -5,6 +5,7 @@ import Rightbar from "./components/rightbar/Rightbar.jsx";
 
 import Navbar from "./components/navbar/Navbar.jsx";
 import useStyles from "./styles.js";
+import Add from "./components/Add/Add.jsx";
 
 function App() {
   const classes = useStyles();
@@ -22,6 +23,7 @@ function App() {
           <Rightbar />
         </Grid>
       </Grid>
+      <Add />
     </div>
   );
 }
