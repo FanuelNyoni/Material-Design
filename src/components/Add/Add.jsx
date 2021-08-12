@@ -128,7 +128,7 @@ const Add = () => {
         onClose={handleClose}
         anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
       >
-        <Alert onClose={handleClose} severity="success">
+        <Alert onClose={handleClose, () => setOpen(false)} severity="success">
           This is a success message!
         </Alert>
       </Snackbar>
